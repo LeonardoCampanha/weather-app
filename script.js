@@ -2,7 +2,6 @@ const apiKey = '72ed6fd59f77f6e0c9f700107f53cd49'
 const lang = 'en_us'
 
 
-
 document.querySelector('.search').addEventListener('submit', async (event) => {
     event.preventDefault()
 
@@ -25,15 +24,12 @@ document.querySelector('.search').addEventListener('submit', async (event) => {
                 windAngle: json.wind.deg
             })
 
-
-
         } catch (err) {
             clearInfo()
             console.log(showWarning('Location not found'))
-            
         }
 
-    }else {
+    } else {
         clearInfo()
     }
 })
@@ -51,7 +47,7 @@ function showInfo(json) {
 function showWarning(msg) {
     document.querySelector('.warning').innerHTML = msg
 }
-function clearInfo(){
+function clearInfo() {
     showWarning('')
     document.querySelector('.result').style.display = 'none'
 
