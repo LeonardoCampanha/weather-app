@@ -19,11 +19,11 @@ h1 {
     margin: 20px 0;
 }
 
-.busca {
+.search {
     display: flex;
     width: 300px;
 }
-.busca #searchInput {
+.search #searchInput {
     flex: 1;
     padding: 10px;
     outline: none;
@@ -31,7 +31,7 @@ h1 {
     border-radius: 5px;
     border: 0;
 }
-.busca button {
+.search button {
     padding: 10px;
     font-size: 15px;
     border: 0;
@@ -41,11 +41,11 @@ h1 {
     margin-left: 10px;
     cursor: pointer;
 }
-.busca button:hover {
+.search button:hover {
     background-color: #444;
 }
 
-.resultado {
+.result {
     width: 300px;
     display: none;
     border: 1px dotted #FFF;
@@ -54,7 +54,7 @@ h1 {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-.titulo {
+.title {
     width: 100%;
     color: #FFF;
     font-size: 25px;
@@ -71,18 +71,18 @@ h1 {
     flex: 1;
     text-align: center;
 }
-.info .vento {
+.info .wind {
     flex: 1;
     text-align: center;
 }
-.tempTitulo,
-.ventoTitulo {
+.tempTitle,
+.windTitle {
     color: #777;
     font-size: 16px;
     margin-bottom: 5px;
 }
 .tempInfo,
-.ventoInfo {
+.windInfo {
     color: #FFF;
     font-size: 30px;
     font-weight: bold;
@@ -91,11 +91,11 @@ h1 {
     font-size: 15px;
     font-weight: normal;
 }
-.ventoInfo span {
+.windInfo span {
     font-size: 15px;
     font-weight: normal;
 }
-.ventoArea {
+.windArea {
     width: 50px;
     height: 50px;
     border: 1px solid #FFF;
@@ -105,14 +105,14 @@ h1 {
     padding-left: 25px;
     padding-top: 25px;
 }
-.ventoPonto {
+.windPoint {
     width: 15px;
     height: 1px;
     background-color: #FFF;
     transform-origin: left;
 }
 
-.aviso {
+.warning {
     color: #FFF;
     padding-top: 20px;
 }
